@@ -11,4 +11,5 @@ def degree(number1, number2, result) -> int:
 
 a = int(input("Введите число а: "))
 b = int(input("Введите число b: "))
-print(degree(a, b, 1))
+print(f"Число {a} в степени {b} - {degree(a, b, 1)}")
+
