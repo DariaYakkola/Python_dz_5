@@ -6,17 +6,13 @@ def sum(number1, number2) -> int:
     if number1 > number2:
         if number2 == 0:
             return number1
-        else:
-            while number2 != 0:
-                return sum(number1 + 1, number2 - 1)
+        return sum(number1 + 1, number2 - 1)
     else:
         if number1 == 0:
             return number2
-        else:
-            while number1 != 0:
-                return sum(number1 - 1, number2 + 1)
+        return sum(number1 - 1, number2 + 1)
 
 
 a = int(input("Введите число а: "))
 b = int(input("Введите число b: "))
-print(sum(a, b))
+print(f"Сумма чисел {a} и {b} - {sum(a, b)}")
